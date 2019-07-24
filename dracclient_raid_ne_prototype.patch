@@ -57,12 +57,3 @@ index b9ca14d..e10d911 100644
  
          '''Modify controllers_to_physical_disk_ids dict by inspecting desired
          status vs current status of each controller's disks.
-@@ -814,7 +824,7 @@ class RAIDManagement(object):
- 
-         return {'conversion_results': controllers_to_results,
-                 'is_reboot_required': is_reboot_required,
--                 'commit_required_ids': controllers}
-+                'commit_required_ids': controllers}
- 
-     def is_realtime_supported(self, raid_controller_fqdd):
-         """Find if controller supports realtime or not
